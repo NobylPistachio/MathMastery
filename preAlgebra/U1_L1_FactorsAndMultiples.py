@@ -21,8 +21,6 @@ def findFactors(n:int):
             factors.append(num)
     return factors
 
-def findFactors(n:int):
-    factors = []
 
 def giveMultiples(n:int):
     "I'm only going to give you first 12 multiples of n as a list"

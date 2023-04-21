@@ -41,4 +41,4 @@ def leastCommonDivisibility(a:int,b:int):
     return lcd_factors
 # print(isPrime(661))
 # print(leastCommonDivisibility(12,20))
-print(primeFactorization(1000454))
+print(primeFactorization(4))
