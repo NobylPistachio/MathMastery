@@ -15,12 +15,36 @@ def isFactor(a:int,b:int):
 def findFactors(n:int):
     factors = []
     for num in range(n):
-        logging.info("checking if %s is a factor of %s",num, n)
+        # logging.info("checking if %s is a factor of %s",num, n)
         num += 1
         if n % num == 0:
             factors.append(num)
     return factors
 
+def multiply(n:list)->int:
+    product = 1
+    for num in n:
+        product *= num
+    return product
+
+def findFactors2(given_n:int)->list:
+    factors = []
+    # for number in range(n):
+    #     number += 1
+    #     logging.info("checking if %s is a factor of %s",number, n)
+    #     if n % number == 0:
+    #         factors.append(number)
+    #         n //= number
+    #         break
+    #     else: number+=1
+    for number in range(given_n):
+        number += 1
+        if given_n % number == 0:
+            print(f'im a factor! {number}')
+            factors.append(number)
+            continue
+        print(number)
+    return factors
 
 def giveMultiples(n:int):
     "I'm only going to give you first 12 multiples of n as a list"
@@ -35,3 +59,4 @@ def isMultiple(a:int,b:int):
     if a % b == 0:
         return True
     else: return False
+    
