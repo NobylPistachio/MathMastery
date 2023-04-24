@@ -48,4 +48,5 @@ def leastCommonDivisibility(a:int,b:int):
 
 def alsoDivisibleBy(factors:list)->list:
     "this will give a list of all possible numbers able to be made with the given list of factors"
+    #look into itertools.combinations
     raise Exception("function alsoDivisibleBy() is not yet done")
